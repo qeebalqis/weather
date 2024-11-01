@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WeatherWise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet"> <!-- New Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            background-image: url('dark.jpg'); /* Background image */
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 51, 102, 1); /* Dark blue */
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif; /* Title font */
+            font-size: 2.5em; /* Title size */
+            margin: 0; 
+            color: #ffffff; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+        }
+        header p {
+            font-size: 0.8em; /* Subtitle size */
+            margin: 0; 
+            color: #b0e0e6; /* Subtitle color */
+        }
+        nav a {
+            color: #fff; 
+            margin: 0 15px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: color 0.3s; 
+        }
+        nav a:hover {
+            color: #00c6ff; 
+        }
+        .content {
+            max-width: 800px; /* Width of the content box */
+            background-color: rgba(255, 255, 255, 0.2); /* Light transparent background */
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            padding: 40px; /* Increased padding for a spacious feel */
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+            text-align: center; /* Centered text */
+            animation: fadeInUp .5s ease-in-out; /* Animation for entrance */
+            margin-top: 20px; 
+        }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-family: 'Lora', serif; /* Changed font for welcome message */
+            font-size: 2.5em; /* Larger size for emphasis */
+            margin-bottom: 20px; 
+            color: #0f1446; /* Bright gold color for the welcome message */
+            text-shadow: 3px 3px rgba(255,255,255,0.7); /* Stronger text shadow for impact */
+        }
+        h2 {
+            font-family: 'Lora', serif; /* Changed font for subheadings */
+            font-size: 1.8em; /* Size of subheadings */
+            color: #0f1446; /* Bright gold color for the welcome message */
+            text-shadow: 3px 3px rgba(255,255,255,0.7);
+            margin-bottom: 20px; 
+        }
+        p {
+            font-family: 'Lora', serif; /* Changed font for paragraphs to Lora for consistency and elegance */
+            font-size: 1em; /* Size of paragraphs */
+            line-height: 1.5; 
+            color: #e6e6e6; /* Changed paragraph text color to a lighter shade for better contrast */
+            margin-bottom: 20px; 
+        }
+
+        .welcome-card {
+          background-color: rgba(255,255,255,0.1);
+          border-radius: 15px;
+          padding: 30px;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+          position: relative;
+          overflow:hidden;
+          transition:.3s ease-in-out;
+        }
+
+        .welcome-card:hover {
+          transform:.05s scale(1.02); /* Slightly enlarges card on hover */
+          box-shadow:.05s rgba(0,114,255,.5); /* Enhances shadow on hover */
+        }
+
+        .background-icon {
+          position:absolute;
+          top:-50%;
+          left:-50%;
+          opacity:.1;
+          width:auto;
+          height:auto;
+          z-index:-1;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>SkySense</h1>
+            <p>Where Weather Meets Adventure</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <!-- About Us Content Section -->
+    <section class="content">
+      <div class="welcome-card">
+          <img src="https://img.icons8.com/ios-filled/100/00c6ff/sun.png" alt="Weather Icon" class="background-icon"> <!-- Background icon -->
+          <h1>🌤️ Welcome to SkySense</h1> <!-- Added an icon -->
+          <p>SkySense isn’t just an app; it’s an experience. We make the weather an essential part of your day, helping you embrace every moment with recommendations tailored to your local forecast. With real-time updates and curated activity suggestions, your next adventure is just a click away, rain or shine.</p>
+
+          <h2>Our Mission</h2>
+          <p>Our mission is simple— inspire you to explore and enjoy the outdoors no matter the weather! Whether it’s sunny, rainy, or snowing, SkySense offers unique activities to match the conditions and help you turn any forecast into an adventure.</p>
+
+          <h2>Why Choose SkySense?</h2>
+          <p>With precise weather data and exciting activity options at your fingertips, SkySense redefines how you interact with the weather. Our beautiful platform ensures you’ll find every feature enjoyable and intuitive—ready to guide you toward your next memorable outing.</p>
+      </div>
+    </section>
+</body>
+</html>
